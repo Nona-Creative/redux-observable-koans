@@ -1,0 +1,44 @@
+env:
+  browser: true
+  es6: true
+  mocha: true
+globals:
+  __DEV__: true
+extends:
+  - 'airbnb'
+  - 'prettier'
+  - 'prettier/react'
+parser: 'babel-eslint'
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 2018
+  sourceType: module
+plugins:
+  - react
+rules:
+  import/prefer-default-export:
+    - off
+  indent:
+    - error
+    - 2
+  linebreak-style:
+    - error
+    - unix
+  quotes:
+    - error
+    - single
+    - avoid-escape
+  semi:
+    - error
+    - never
+  comma-dangle:
+    - error
+    - always-multiline
+  no-underscore-dangle:
+    - off
+  react/jsx-filename-extension:
+    - 1
+    - extensions:
+      - js
+      - jsx

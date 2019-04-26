@@ -1,0 +1,8 @@
+{
+  "init": "initialize project",
+  "lint:js": "run JS linter",
+  "start": "serve project",
+  "test": "run all unit tests",
+  "test:coverage": "run all unit tests with coverage",
+  "test:watch": "run all unit tests in watch mode"
+}

@@ -1,0 +1,47 @@
+{
+  "name": "redux-observable-koans",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "help": "package-json-help.js",
+    "_test:spec": "NODE_ENV=test mocha --opts mocha.opts",
+    "_test:dot": "NODE_ENV=test npm run _test:spec -- --reporter dot",
+    "test": "npm run _test:spec",
+    "test:watch": "npm run _test:spec -- --watch",
+    "lint:js": "eslint --ext .js --ignore-path .gitignore .",
+    "_git:pre-commit": "npm-run-all lint:js",
+    "_git:pre-push": "npm-run-all lint:js test"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.4",
+    "ramda": "^0.26.0",
+    "redux": "^4.0.1",
+    "redux-observable": "^1.1.0",
+    "rxjs": "^6.5.1",
+    "rxjs-marbles": "^5.0.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "babel-jest": "^24.7.1",
+    "chai": "^4.2.0",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "husky": "^1.1.3",
+    "js-parametrize": "0.0.2",
+    "mocha": "^5.2.0",
+    "npm-run-all": "^4.1.5",
+    "package-json-help": "0.0.9",
+    "sinon": "^7.2.7"
+  }
+}
