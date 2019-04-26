@@ -18,3 +18,23 @@ export const processCurrentTransactionEpic = (action$, state$, { apiProcessTrans
     // TODO: fill in here
   )
 )
+
+//---------------------------------
+// process current transaction 2
+//---------------------------------
+
+export const processCurrentTransaction2Epic = (action$, state$, { apiProcessTransaction }) => (
+  action$.pipe(
+    // TODO: fill in here
+  )
+)
+
+//---------------------------------
+// process current transaction 3
+//---------------------------------
+
+export const processCurrentTransaction3Epic = (action$, state$, { apiProcessTransaction }) => (
+  action$.pipe(
+    // TODO: fill in here
+  )
+)

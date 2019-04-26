@@ -8,4 +8,4 @@ go through each koan in src/koans
  - hard == you need to write both epic and tests, only instructions and test comments are written for you
  - solved == look here for complete solutions
 
-each file contians instructions
+each file contains instructions
