@@ -68,9 +68,11 @@ describe('Koan 2 epics : filter actions', () => {
   // ------------------------------------------------------
   // write an epic that:
   // - in response to any failure action
-  // - dispatches a setMessage action that looks like this
-  //   { flavour: 'failure', message }
-  //   where message is the failure action payload
+  // - dispatches both:
+  //   - a setMessage action that looks like this
+  //     { flavour: 'failure', message }
+  //     where message is the failure action payload
+  //   - and a persistMessage with just the message
   //
   // write a test that dispatches each action twice eg.
   // const action$        = m.cold('---a-----a-----', values)
