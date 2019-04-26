@@ -20,10 +20,10 @@ export const initApp1Epic = (action$) => (
 )
 
 //---------------------------------
-// init app 3
+// init app 2
 //---------------------------------
 
-export const initApp3Epic = (action$) => (
+export const initApp2Epic = (action$) => (
   action$.pipe(
     // TODO: fill in here
   )
@@ -33,7 +33,7 @@ export const initApp3Epic = (action$) => (
 // init app 3
 //---------------------------------
 
-export const initApp2Epic = (action$) => (
+export const initApp3Epic = (action$) => (
   action$.pipe(
     // TODO: fill in here
   )

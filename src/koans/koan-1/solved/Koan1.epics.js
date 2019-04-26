@@ -21,10 +21,10 @@ export const initApp1Epic = (action$) => (
 )
 
 //---------------------------------
-// init app 3
+// init app 2
 //---------------------------------
 
-export const initApp3Epic = (action$) => (
+export const initApp2Epic = (action$) => (
   action$.pipe(
     ofType(INIT_APP, RE_INIT_APP),
     mapTo(initAppSuccess()),
@@ -35,7 +35,7 @@ export const initApp3Epic = (action$) => (
 // init app 3
 //---------------------------------
 
-export const initApp2Epic = (action$) => (
+export const initApp3Epic = (action$) => (
   action$.pipe(
     ofType(INIT_APP),
     switchMap(() => [initAppSuccess(), getUser()]),

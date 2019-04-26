@@ -69,7 +69,7 @@ describe('Koan 1 epics: action/s in action/s out', () => {
         const expected       =        '---b---b--'
 
         // when ... we initialize or reinitialize app
-        const destination$ = SUT.initApp3Epic(action$)
+        const destination$ = SUT.initApp2Epic(action$)
 
         // then
         m.equal(destination$, expected, values)
@@ -101,7 +101,7 @@ describe('Koan 1 epics: action/s in action/s out', () => {
       const expected       =        '---(bc)--(bc)--'
 
       // when ... we initialize app
-      const destination$ = SUT.initApp2Epic(action$)
+      const destination$ = SUT.initApp3Epic(action$)
 
       // then
       m.equal(destination$, expected, values)
